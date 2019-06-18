@@ -1,13 +1,14 @@
 .ftco-navbar-light {
-    background: transparent !important;
-    position: absolute;
-    top: 20px;
-    left: 0;
-    right: 0;
+	background: transparent !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
 	z-index: 3;
-	
+
 	.navbar-brand {
 		color: #000;
+		min-width: 350px;
 	}
 
 	.navbar-toggler {
@@ -17,14 +18,14 @@
 		padding-right: 0;
 		text-transform: uppercase;
 		font-size: 16px;
-		letter-spacing: .1em;
+		letter-spacing: 0.1em;
 	}
 
 	.navbar-nav > .nav-item {
-		&> .nav-link {
+		& > .nav-link {
 			font-size: 13px;
-			padding-top: .9rem;
-			padding-bottom: .9rem;
+			padding-top: 0.9rem;
+			padding-bottom: 0.9rem;
 			padding-left: 20px;
 			padding-right: 20px;
 			letter-spacing: 1px;
@@ -34,15 +35,15 @@
 			opacity: 1 !important;
 		}
 
-		&.active > a {
+		& > a.active {
 			color: $primary_color;
 		}
 
 		&.cta > a {
 			color: #fff;
 			border: 1px solid $primary_color;
-			padding-top: .5rem;
-			padding-bottom: .5rem;
+			padding-top: 0.5rem;
+			padding-bottom: 0.5rem;
 			padding-left: 20px;
 			padding-right: 20px;
 			margin-top: 4px;
@@ -56,21 +57,22 @@
 }
 
 .navbar {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 	padding: 0.5rem 1rem;
-	
-	&> .container, &> .container-fluid {
+
+	& > .container,
+	& > .container-fluid {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
@@ -86,56 +88,56 @@
 }
 
 .navbar-brand {
-    font-size: 20px;
+	font-size: 20px;
 	font-weight: 900;
 	display: inline-block;
-    padding-top: 0.3125rem;
-    padding-bottom: 0.3125rem;
-    margin-right: 1rem;
-    line-height: inherit;
-    white-space: nowrap;
+	padding-top: 0.3125rem;
+	padding-bottom: 0.3125rem;
+	margin-right: 1rem;
+	line-height: inherit;
+	white-space: nowrap;
 }
 
 .navbar-toggler {
-    padding: 0.25rem 0.75rem;
-    font-size: 1.25rem;
-    line-height: 1;
-    background-color: transparent;
-    border: 1px solid transparent;
-    border-radius: 0.25rem;
+	padding: 0.25rem 0.75rem;
+	font-size: 1.25rem;
+	line-height: 1;
+	background-color: transparent;
+	border: 1px solid transparent;
+	border-radius: 0.25rem;
 }
 
 .collapse:not(.show) {
-    display: none;
+	display: none;
 }
 
 .navbar-collapse {
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+	-ms-flex-preferred-size: 100%;
+	flex-basis: 100%;
+	-webkit-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
 }
 
 .navbar-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
 }
 
 .nav-link {
-    display: block;
-    padding: 0.5rem 1rem;
+	display: block;
+	padding: 0.5rem 1rem;
 }
 
 @media (max-width: 991.98px) {
@@ -150,13 +152,12 @@
 	}
 
 	.navbar-expand-lg {
-
-		&> .container, & > .container-fluid {
+		& > .container,
+		& > .container-fluid {
 			padding-right: 0;
 			padding-left: 0;
 		}
 	}
-	
 }
 
 @media (min-width: 992px) {
@@ -169,7 +170,8 @@
 		-ms-flex-pack: start;
 		justify-content: flex-start;
 
-		.container, .container-fluid {
+		.container,
+		.container-fluid {
 			-ms-flex-wrap: nowrap;
 			flex-wrap: nowrap;
 		}
@@ -185,7 +187,7 @@
 			-ms-flex-preferred-size: auto;
 			flex-basis: auto;
 		}
-		
+
 		.navbar-nav {
 			-webkit-box-orient: horizontal;
 			-webkit-box-direction: normal;
