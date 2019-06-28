@@ -1,0 +1,19 @@
+.heading-section {
+	&.heading-section-white {
+		.subheading {
+			color: rgba(255, 255, 255, 0.9);
+		}
+
+		h2 {
+			color: #fff;
+		}
+	}
+
+	.subheading {
+		font-size: 14px;
+		display: block;
+		margin-bottom: 0;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+}
