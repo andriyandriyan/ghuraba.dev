@@ -42,8 +42,7 @@ const Header = ({ siteTitle }) => {
 			clearTimeout(timeOut);
 			timeOut = setTimeout(() => {
 				setNavbarClass(navClass);
-				console.log(navClass);
-			}, 200);
+			}, 0);
 		};
 	}, []);
 
