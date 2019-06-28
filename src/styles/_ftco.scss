@@ -1,0 +1,26 @@
+.ftco- {
+	&footer {
+		font-size: 16px;
+		padding: 5em 0;
+		padding-bottom: 3em;
+		background: #281ec7;
+	}
+
+	&section {
+		position: relative;
+		width: 100%;
+		display: block;
+	}
+
+	&animate {
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	&animated {
+		-webkit-animation-duration: 0.5s;
+		animation-duration: 0.5s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+	}
+}
