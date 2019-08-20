@@ -4,6 +4,57 @@
 		padding: 5em 0;
 		padding-bottom: 3em;
 		background: #281ec7;
+
+		&-widget {
+			&.bg-primary {
+				background: $primary_color;
+			}
+
+			h2 {
+				font-weight: 400;
+				color: #fff;
+				margin-bottom: 40px;
+				font-size: 20px;
+				font-weight: 700;
+			}
+
+			ul li a span {
+				color: #fff;
+			}
+		}
+
+		p {
+			color: rgba(255, 255, 255, 0.7);
+		}
+
+		&-social li {
+			list-style: none;
+			margin: 0 10px 0 0;
+			display: inline-block;
+
+			a {
+				height: 50px;
+				width: 50px;
+				display: block;
+				float: left;
+				border-radius: 50%;
+				position: relative;
+
+				span {
+					position: absolute;
+					font-size: 26px;
+					top: 50%;
+					left: 50%;
+					-webkit-transform: translate(-50%, -50%);
+					-ms-transform: translate(-50%, -50%);
+					transform: translate(-50%, -50%);
+				}
+			}
+		}
+
+		a {
+			color: rgba(255, 255, 255, 0.7);
+		}
 	}
 
 	&section {

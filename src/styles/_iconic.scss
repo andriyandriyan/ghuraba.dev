@@ -18,7 +18,7 @@
     line-height: 1;
     -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	
+
 	&:empty:before {
 		width: 1em;
 		text-align: center;
@@ -27,5 +27,17 @@
 
 	&-menu:before {
 		content: '\e09b';
+	}
+
+	&-map-marker:before {
+		content: "\f041";
+	}
+
+	&-phone:before {
+		content: "\f095";
+	}
+
+	&-envelope:before {
+		content: "\f0e0";
 	}
 }

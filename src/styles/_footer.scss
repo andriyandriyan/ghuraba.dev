@@ -1,19 +1,26 @@
-.heading-section {
-	&.heading-section-white {
-		.subheading {
-			color: rgba(255, 255, 255, 0.9);
-		}
+.block-23 ul {
+	padding: 0;
 
-		h2 {
-			color: #fff;
-		}
+	li, li>a {
+		display: table;
+		line-height: 1.5;
+		margin-bottom: 15px;
 	}
 
-	.subheading {
-		font-size: 14px;
-		display: block;
-		margin-bottom: 0;
-		text-transform: uppercase;
-		letter-spacing: 1px;
+	li {
+		.icon {
+    		width: 40px;
+			font-size: 18px;
+			padding-top: 2px;
+			color: #fff;
+		}
+		.icon, .text {
+			display: table-cell;
+			vertical-align: top;
+		}
+
+		span {
+			color: rgba(255,255,255,.7);
+		}
 	}
 }

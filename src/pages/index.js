@@ -45,12 +45,12 @@ const IndexPage = () => {
 						>
 							<div className="text mt-5">
 								<h1 className="mb-3">
-									<span>Design,</span> <span>Development,</span>{' '}
-									<span>Hosting</span>
+									<span>Web &</span> <span>Mobile Development</span>
 								</h1>
 								<p>
-									Far far away, behind the word mountains, far from the
-									countries Vokalia and Consonantia, there live the blind texts.
+									Devghuraba Teknologi adalah IT Konsultan yang
+									menyediakan jasa pembuatan aplikasi berbasis <i>web</i> dan{' '}
+									<i>mobile.</i>
 								</p>
 								<p>
 									<a href="#" className="btn btn-primary px-4 py-3">

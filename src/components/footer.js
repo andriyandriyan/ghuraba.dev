@@ -3,36 +3,13 @@ import React from 'react';
 const Footer = () => (
 	<footer className="ftco-footer ftco-bg-dark ftco-section">
 		<div className="container">
-			<div className="row mb-5 pb-5 align-items-center d-flex">
-				<div className="col-md-6">
-					<div className="heading-section heading-section-white ftco-animate">
-						<span className="subheading">Get an easy quote</span>
-						<h2 style={{ fontSize: 30 }}>Sign Up For Web Hosting Today!</h2>
-					</div>
-				</div>
-				<div className="col-md-3 ftco-animate">
-					<div className="price">
-						<span className="subheading">Starting at Only</span>
-						<h3>
-							$4.50<span>/mo</span>
-						</h3>
-					</div>
-				</div>
-				<div className="col-md-3 ftco-animate">
-					<p className="mb-0">
-						<a href="#" className="btn btn-primary py-3 px-4">
-							Get started now
-						</a>
-					</p>
-				</div>
-			</div>
 			<div className="row mb-5">
 				<div className="col-md">
 					<div className="ftco-footer-widget mb-4 bg-primary p-4">
-						<h2 className="ftco-heading-2">CoHost</h2>
+						<h2 className="ftco-heading-2">DEVGHURABA</h2>
 						<p>
-							Far far away, behind the word mountains, far from the countries
-							Vokalia and Consonantia, there live the blind texts.
+							Devghuraba Teknologi adalah IT Konsultan yang menyediakan jasa
+							pembuatan aplikasi berbasis <i>web</i> dan <i>mobile.</i>
 						</p>
 						<ul className="ftco-footer-social list-unstyled mb-0">
 							<li className="ftco-animate">
@@ -129,19 +106,19 @@ const Footer = () => (
 				</div>
 				<div className="col-md">
 					<div className="ftco-footer-widget mb-4">
-						<h2 className="ftco-heading-2">Office</h2>
+						<h2 className="ftco-heading-2">Kantor</h2>
 						<div className="block-23 mb-3">
 							<ul>
 								<li>
 									<span className="icon icon-map-marker"></span>
 									<span className="text">
-										203 Fake St. Mountain View, San Francisco, California, USA
+										Jl. H. Adjid Kel. Bojong Rawalumbu, Kec. Rawalumbu Kota Bekasi 17116
 									</span>
 								</li>
 								<li>
 									<a href="#">
 										<span className="icon icon-phone"></span>
-										<span className="text">+2 392 3929 210</span>
+										<span className="text">+628988798320</span>
 									</a>
 								</li>
 								<li>
@@ -152,7 +129,7 @@ const Footer = () => (
 												className="__cf_email__"
 												data-cfemail="1f767179705f66706a6d7b70727e7671317c7072"
 											>
-												[email&#160;protected]
+												devghuraba@gmail.com
 											</span>
 										</span>
 									</a>
