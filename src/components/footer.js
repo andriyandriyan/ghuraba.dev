@@ -1,4 +1,7 @@
 import React from 'react';
+import mapPin from '../images/map-pin.svg';
+import phone from '../images/phone-call.svg';
+import mail from '../images/mail.svg';
 
 const Footer = () => (
 	<footer className="ftco-footer ftco-bg-dark ftco-section">
@@ -8,26 +11,10 @@ const Footer = () => (
 					<div className="ftco-footer-widget mb-4 bg-primary p-4">
 						<h2 className="ftco-heading-2">DEVGHURABA</h2>
 						<p>
-							Devghuraba Teknologi adalah IT Konsultan yang menyediakan jasa
-							pembuatan aplikasi berbasis <i>web</i> dan <i>mobile.</i>
+							Devghuraba Teknologi adalah <i>Software Developer</i> yang
+							menyediakan jasa pembuatan aplikasi berbasis <i>web</i> dan{' '}
+							<i>mobile.</i>
 						</p>
-						<ul className="ftco-footer-social list-unstyled mb-0">
-							<li className="ftco-animate">
-								<a href="#">
-									<span className="icon-twitter"></span>
-								</a>
-							</li>
-							<li className="ftco-animate">
-								<a href="#">
-									<span className="icon-facebook"></span>
-								</a>
-							</li>
-							<li className="ftco-animate">
-								<a href="#">
-									<span className="icon-instagram"></span>
-								</a>
-							</li>
-						</ul>
 					</div>
 				</div>
 				<div className="col-md">
@@ -110,25 +97,29 @@ const Footer = () => (
 						<div className="block-23 mb-3">
 							<ul>
 								<li>
-									<span className="icon icon-map-marker"></span>
+									<span className="icon">
+										<img src={mapPin} alt="map-marker" />
+									</span>
 									<span className="text">
-										Jl. H. Adjid Kel. Bojong Rawalumbu, Kec. Rawalumbu Kota Bekasi 17116
+										Jl. H. Adjid Kel. Bojong Rawalumbu, Kec. Rawalumbu Kota
+										Bekasi 17116
 									</span>
 								</li>
 								<li>
-									<a href="#">
-										<span className="icon icon-phone"></span>
+									<a target="_blank" rel="noopener noreferrer" href="https://wa.me/628988798320">
+										<span className="icon">
+											<img src={phone} alt="phone" />
+										</span>
 										<span className="text">+628988798320</span>
 									</a>
 								</li>
 								<li>
-									<a href="#">
-										<span className="icon icon-envelope"></span>
+									<a target="_blank" rel="noopener noreferrer" href="mailto:devghuraba@gmail.com">
+										<span className="icon">
+											<img src={mail} alt="mail" />
+										</span>
 										<span className="text">
-											<span
-												className="__cf_email__"
-												data-cfemail="1f767179705f66706a6d7b70727e7671317c7072"
-											>
+											<span>
 												devghuraba@gmail.com
 											</span>
 										</span>
@@ -141,15 +132,8 @@ const Footer = () => (
 			</div>
 			<div className="row">
 				<div className="col-md-12 text-center">
-					Copyright © {new Date().getFullYear()}, Built with
-					{` `}
-					<a href="https://www.gatsbyjs.org">Gatsby</a>
 					<p>
-						Copyright &copy; All rights reserved | This template is made with{' '}
-						<i className="icon-heart" aria-hidden="true"></i> by{' '}
-						<a href="https://colorlib.com" target="_blank">
-							Colorlib
-						</a>
+						Copyright © {new Date().getFullYear()} All rights reserved
 					</p>
 				</div>
 			</div>

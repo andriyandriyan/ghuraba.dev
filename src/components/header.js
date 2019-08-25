@@ -1,6 +1,6 @@
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
@@ -19,7 +19,7 @@ const Header = ({ siteTitle }) => {
 		`
 	);
 
-	let timeOut = 0;
+	const timeOut = useRef();
 	const baseNavbarClass =
 		'navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light';
 	const [navbarClass, setNavbarClass] = useState('');
@@ -39,8 +39,8 @@ const Header = ({ siteTitle }) => {
 				}
 			}
 
-			clearTimeout(timeOut);
-			timeOut = setTimeout(() => {
+			clearTimeout(timeOut.current);
+			timeOut.current = setTimeout(() => {
 				setNavbarClass(navClass);
 			}, 0);
 		};
