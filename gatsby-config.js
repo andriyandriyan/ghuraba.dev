@@ -18,8 +18,8 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
-				name: `gatsby-starter-default`,
-				short_name: `starter`,
+				name: `Devghuraba Teknologi`,
+				short_name: `Devghuraba`,
 				start_url: `/`,
 				background_color: `#3930d8`,
 				theme_color: `#3930d8`,
