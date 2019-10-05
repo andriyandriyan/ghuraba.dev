@@ -12,82 +12,18 @@ const Footer = () => (
 						<h2 className="ftco-heading-2">DEVGHURABA</h2>
 						<p>
 							Devghuraba Teknologi adalah <i>Software Developer</i> yang
-							menyediakan jasa pembuatan aplikasi berbasis <i>web</i> dan{' '}
+							menyediakan jasa pembuatan aplikasi berbasis <i>desktop</i>, <i>web</i> dan{' '}
 							<i>mobile.</i>
 						</p>
 					</div>
 				</div>
 				<div className="col-md">
 					<div className="ftco-footer-widget mb-4 ml-md-5">
-						<h2 className="ftco-heading-2">Unseful Links</h2>
+						<h2 className="ftco-heading-2">Layanan Kami</h2>
 						<ul className="list-unstyled">
-							<li>
-								<a href="#" className="py-2 d-block">
-									Servers
-								</a>
-							</li>
-							<li>
-								<a href="#" className="py-2 d-block">
-									Windos Hosting
-								</a>
-							</li>
-							<li>
-								<a href="#" className="py-2 d-block">
-									Cloud Hosting
-								</a>
-							</li>
-							<li>
-								<a href="#" className="py-2 d-block">
-									OS Servers
-								</a>
-							</li>
-							<li>
-								<a href="#" className="py-2 d-block">
-									Linux Servers
-								</a>
-							</li>
-							<li>
-								<a href="#" className="py-2 d-block">
-									Policy
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div className="col-md">
-					<div className="ftco-footer-widget mb-4">
-						<h2 className="ftco-heading-2">Navigational</h2>
-						<ul className="list-unstyled">
-							<li>
-								<a href="#" className="py-2 d-block">
-									Home
-								</a>
-							</li>
-							<li>
-								<a href="#" className="py-2 d-block">
-									Domain
-								</a>
-							</li>
-							<li>
-								<a href="#" className="py-2 d-block">
-									Hosting
-								</a>
-							</li>
-							<li>
-								<a href="#" className="py-2 d-block">
-									About
-								</a>
-							</li>
-							<li>
-								<a href="#" className="py-2 d-block">
-									Blog
-								</a>
-							</li>
-							<li>
-								<a href="#" className="py-2 d-block">
-									Contact
-								</a>
-							</li>
+							<li>Mobile Apps Development</li>
+							<li>Web Development</li>
+							<li>Desktop Apps Development</li>
 						</ul>
 					</div>
 				</div>

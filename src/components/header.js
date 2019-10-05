@@ -25,7 +25,7 @@ const Header = ({ siteTitle }) => {
 	const [navbarClass, setNavbarClass] = useState('');
 
 	useEffect(() => {
-		window.onscroll = () => {
+		window.addEventListener('scroll', () => {
 			const st = document.documentElement.scrollTop;
 			let navClass;
 			if (st > 150) {
@@ -43,7 +43,7 @@ const Header = ({ siteTitle }) => {
 			timeOut.current = setTimeout(() => {
 				setNavbarClass(navClass);
 			}, 0);
-		};
+		});
 	}, []);
 
 	return (
@@ -91,9 +91,9 @@ const Header = ({ siteTitle }) => {
 							</Link>
 						</li>
 						<li className="nav-item cta">
-							<Link className="nav-link" to="#">
-								<span>Get started</span>
-							</Link>
+							<a target="_blank" className="nav-link" rel="noopener noreferrer" href="https://wa.me/628988798320">
+								<span>Hubungi Kami</span>
+							</a>
 						</li>
 					</ul>
 				</div>

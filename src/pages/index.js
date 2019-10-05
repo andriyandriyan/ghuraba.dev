@@ -5,6 +5,13 @@ import SEO from '../components/seo';
 
 import '../styles/index.scss';
 import image from '../images/undraw_startup_life_2du2.svg';
+import angular from '../images/angular.svg';
+import ionic from '../images/ionic.svg';
+import laravel from '../images/laravel.svg';
+import react from '../images/react.svg';
+import nodejs from '../images/node-js.svg';
+import vuejs from '../images/vuejs.svg';
+import aws from '../images/aws.svg';
 
 const IndexPage = () => {
 	const timeOut = useRef();
@@ -22,13 +29,6 @@ const IndexPage = () => {
 		setTimeout(() => {
 			setFadeInAnimate('fadeInUp ftco-animated');
 		}, 250);
-
-		window.onscroll = () => {
-			const ftco_animate = document.getElementsByClassName('ftco-animate');
-			Object.keys(ftco_animate).map((val) => {
-				console.log(val);
-			});
-		};
 	}, []);
 
 	return (
@@ -55,12 +55,12 @@ const IndexPage = () => {
 								</h1>
 								<p>
 									Devghuraba Teknologi adalah <i>Software Developer</i> yang
-									menyediakan jasa pembuatan aplikasi berbasis <i>web</i> dan{' '}
-									<i>mobile.</i>
+									menyediakan jasa pembuatan aplikasi berbasis <i>desktop</i>,{' '}
+									<i>web</i> dan <i>mobile.</i>
 								</p>
 								<p>
 									<a href="#" className="btn btn-primary px-4 py-3">
-										Get in touch
+										Hubungi Kami
 									</a>
 								</p>
 							</div>
@@ -70,100 +70,124 @@ const IndexPage = () => {
 			</div>
 			<section className="ftco-section services-section bg-light">
 				<div className="container">
-					<div className="row justify-content-center mb-5 pb-3">
-						<div className="col-md-7 text-center heading-section ftco-animate">
+					<div className="row justify-content-center mb-3 pb-3">
+						<div className="col-md-7 text-center heading-section">
 							<h2 className="mb-4">Kelebihan Kami</h2>
-							<p>
-								Even the all-powerful Pointing has no control about the blind
-								texts it is an almost unorthographic.
-							</p>
 						</div>
 					</div>
 					<div className="row">
-						<div className="col-md-6 d-flex align-self-stretch ftco-animate">
+						<div className="col-md-6 d-flex align-self-stretch">
 							<div className="media block-6 services d-flex align-items-center">
 								<div className="icon d-flex align-items-center justify-content-center order-md-last">
 									<span className="flaticon-cloud"></span>
 								</div>
 								<div className="media-body pl-4 pl-md-0 pr-md-4 text-md-right">
-									<h3 className="heading">Super Fast Server</h3>
+									<h3 className="heading">Performa Web Cepat</h3>
 									<p className="mb-0">
-										Even the all-powerful Pointing has no control about the
-										blind texts it is an almost unorthographic.
+										Web yang cepat mempengaruhi SEO (Search Engine Optimization)
+										dan kenyamanan pengguna.
 									</p>
 								</div>
 							</div>
 						</div>
-						<div className="col-md-6 d-flex align-self-stretch ftco-animate">
+						<div className="col-md-6 d-flex align-self-stretch">
 							<div className="media block-6 services d-flex align-items-center">
 								<div className="icon d-flex align-items-center justify-content-center">
 									<span className="flaticon-server"></span>
 								</div>
 								<div className="media-body pl-4">
-									<h3 className="heading">Daily Backups</h3>
+									<h3 className="heading">Aplikasi Cross Platform</h3>
 									<p className="mb-0">
-										Even the all-powerful Pointing has no control about the
-										blind texts it is an almost unorthographic.
+										Aplikasi cross platform untuk mempercepat proses development
+										dan mengurangi biaya.
 									</p>
 								</div>
 							</div>
 						</div>
-						<div className="col-md-6 d-flex align-self-stretch ftco-animate">
+						<div className="col-md-6 d-flex align-self-stretch">
 							<div className="media block-6 services d-flex align-items-center">
 								<div className="icon d-flex align-items-center justify-content-center order-md-last">
 									<span className="flaticon-customer-service"></span>
 								</div>
 								<div className="media-body pl-4 pl-md-0 pr-md-4 text-md-right">
-									<h3 className="heading">Technical Services</h3>
-									<p>
-										Even the all-powerful Pointing has no control about the
-										blind texts it is an almost unorthographic.
-									</p>
+									<h3 className="heading">Harga Bersaing</h3>
+									<p>Harga yang bersaing dengan jaminan kualitas terbaik.</p>
 								</div>
 							</div>
 						</div>
-						<div className="col-md-6 d-flex align-self-stretch ftco-animate">
+						<div className="col-md-6 d-flex align-self-stretch">
 							<div className="media block-6 services d-flex align-items-center">
 								<div className="icon d-flex align-items-center justify-content-center">
 									<span className="flaticon-life-insurance"></span>
 								</div>
 								<div className="media-body pl-4">
-									<h3 className="heading">Secure and Reliable</h3>
+									<h3 className="heading">Dukungan Pemeliharan</h3>
 									<p>
-										Even the all-powerful Pointing has no control about the
-										blind texts it is an almost unorthographic.
+										Kami menyediakan jasa pemeliharan agar aplikasi Anda selalu
+										dalam kondisi baik.
 									</p>
 								</div>
 							</div>
 						</div>
-						<div className="col-md-6 d-flex align-self-stretch ftco-animate">
+						<div className="col-md-6 d-flex align-self-stretch">
 							<div className="media block-6 services d-flex align-items-center">
 								<div className="icon d-flex align-items-center justify-content-center order-md-last">
 									<span className="flaticon-cloud-computing"></span>
 								</div>
 								<div className="media-body pl-4 pl-md-0 pr-md-4 text-md-right">
-									<h3 className="heading">DNS Control</h3>
+									<h3 className="heading">Teknologi Terbaru</h3>
 									<p>
-										Even the all-powerful Pointing has no control about the
-										blind texts it is an almost unorthographic.
+										Kami selalu menggunakan teknologi terbaru untuk tetap
+										menjaga kualitas aplikasi yang kami buat.
 									</p>
 								</div>
-								s
 							</div>
 						</div>
-						<div className="col-md-6 d-flex align-self-stretch ftco-animate">
+						<div className="col-md-6 d-flex align-self-stretch">
 							<div className="media block-6 services d-flex align-items-center">
 								<div className="icon d-flex align-items-center justify-content-center">
 									<span className="flaticon-settings"></span>
 								</div>
 								<div className="media-body pl-4">
-									<h3 className="heading">24/7 Support</h3>
+									<h3 className="heading">Garansi Selamanya</h3>
 									<p>
-										Even the all-powerful Pointing has no control about the
-										blind texts it is an almost unorthographic.
+										Kami memberikan garansi selamanya pada aplikasi yang kami
+										buat.
 									</p>
 								</div>
 							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section className="ftco-section services-section bg-light">
+				<div className="container">
+					<div className="row justify-content-center mb-3 pb-3">
+						<div className="col-md-7 text-center heading-section">
+							<h2 className="mb-4">Teknologi Yang Kami Gunakan</h2>
+						</div>
+					</div>
+					<div className="row technologies">
+						<div className="col-sm">
+							<img src={react} />
+						</div>
+						<div className="col-sm">
+							<img src={angular} />
+						</div>
+						<div className="col-sm">
+							<img src={vuejs} />
+						</div>
+						<div className="col-sm">
+							<img src={laravel} />
+						</div>
+						<div className="col-sm">
+							<img src={nodejs} />
+						</div>
+						<div className="col-sm">
+							<img src={ionic} />
+						</div>
+						<div className="col-sm">
+							<img src={aws} />
 						</div>
 					</div>
 				</div>

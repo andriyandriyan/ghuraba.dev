@@ -4,6 +4,7 @@
 		padding: 5em 0;
 		padding-bottom: 3em;
 		background: #281ec7;
+		color: rgba(255, 255, 255, 0.7);
 
 		&-widget {
 			&.bg-primary {
@@ -50,10 +51,6 @@
 					transform: translate(-50%, -50%);
 				}
 			}
-		}
-
-		a {
-			color: rgba(255, 255, 255, 0.7);
 		}
 	}
 
