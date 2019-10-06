@@ -75,7 +75,11 @@ export const images = graphql`
 
 const IndexPage = ({ data: images }) => {
 	const timeOut = useRef();
-	const [windowHeight, setWindowHeight] = useState(window.innerHeight);
+	let height = 0;
+	if (typeof window !== 'undefined') {
+		height = window.innerHeight;
+	}
+	const [windowHeight, setWindowHeight] = useState(height);
 	const [fadeInAnimate, setFadeInAnimate] = useState('');
 	const [filter, setFilter] = useState('All');
 
@@ -303,9 +307,24 @@ const IndexPage = ({ data: images }) => {
 					</div>
 					<div className="row mb-3">
 						<div className="col-md-12">
-							<button onClick={() => setFilter('All')} className={`btn-filter ${filter === 'All' ? 'active' : ''}`}>Semua</button>
-							<button onClick={() => setFilter('Web')} className={`btn-filter ${filter === 'Web' ? 'active' : ''}`}>Website</button>
-							<button onClick={() => setFilter('Mobile')} className={`btn-filter ${filter === 'Mobile' ? 'active' : ''}`}>Mobile App</button>
+							<button
+								onClick={() => setFilter('All')}
+								className={`btn-filter ${filter === 'All' ? 'active' : ''}`}
+							>
+								Semua
+							</button>
+							<button
+								onClick={() => setFilter('Web')}
+								className={`btn-filter ${filter === 'Web' ? 'active' : ''}`}
+							>
+								Website
+							</button>
+							<button
+								onClick={() => setFilter('Mobile')}
+								className={`btn-filter ${filter === 'Mobile' ? 'active' : ''}`}
+							>
+								Mobile App
+							</button>
 						</div>
 					</div>
 					<div className="row portfolio">
