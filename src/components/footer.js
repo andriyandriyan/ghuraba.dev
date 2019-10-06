@@ -1,6 +1,6 @@
 import React from 'react';
 import mapPin from '../images/map-pin.svg';
-import phone from '../images/phone-call.svg';
+import whatsapp from '../images/whatsapp.svg';
 import mail from '../images/mail.svg';
 
 const Footer = () => (
@@ -44,7 +44,7 @@ const Footer = () => (
 								<li>
 									<a target="_blank" rel="noopener noreferrer" href="https://wa.me/628988798320">
 										<span className="icon">
-											<img src={phone} alt="phone" />
+											<img src={whatsapp} alt="phone" />
 										</span>
 										<span className="text">+628988798320</span>
 									</a>
