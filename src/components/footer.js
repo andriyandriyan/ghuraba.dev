@@ -12,7 +12,7 @@ const Footer = () => (
 						<h2 className="ftco-heading-2">DEVGHURABA</h2>
 						<p>
 							Devghuraba Teknologi adalah <i>Software Developer</i> yang
-							menyediakan jasa pembuatan aplikasi berbasis <i>desktop</i>, <i>web</i> dan{' '}
+							menyediakan jasa pembuatan aplikasi berbasis <i>web</i> dan{' '}
 							<i>mobile.</i>
 						</p>
 					</div>
@@ -23,7 +23,6 @@ const Footer = () => (
 						<ul className="list-unstyled">
 							<li>Mobile Apps Development</li>
 							<li>Web Development</li>
-							<li>Desktop Apps Development</li>
 						</ul>
 					</div>
 				</div>

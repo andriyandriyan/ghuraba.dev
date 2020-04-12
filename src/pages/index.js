@@ -92,6 +92,7 @@ const IndexPage = ({ data: images }) => {
 		};
 
 		setTimeout(() => {
+			setWindowHeight(window.innerHeight);
 			setFadeInAnimate('fadeInUp ftco-animated');
 		}, 250);
 	}, []);
@@ -121,7 +122,7 @@ const IndexPage = ({ data: images }) => {
 								</h1>
 								<p>
 									Devghuraba Teknologi adalah <i>Software Developer</i> yang
-									menyediakan jasa pembuatan aplikasi berbasis <i>desktop</i>,{' '}
+									menyediakan jasa pembuatan aplikasi berbasis{' '}
 									<i>web</i> dan <i>mobile.</i>
 								</p>
 								<p>
